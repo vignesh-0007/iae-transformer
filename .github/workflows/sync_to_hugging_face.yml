@@ -16,5 +16,5 @@ jobs:
           lfs: true
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.iae }}
-        run: git push --force https://vignesh-n:$iae@huggingface.co/spaces/vignesh-n/iae-transformer main
+          HF_TOKEN: ${{ secrets.IAE }}
+        run: git push --force https://vignesh-n:$HF_TOKEN@huggingface.co/spaces/vignesh-n/iae-transformer main
